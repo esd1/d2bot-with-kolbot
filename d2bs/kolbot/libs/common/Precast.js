@@ -134,7 +134,11 @@ var Precast = new function () {
 		var buffSummons = false;
 
 		// Force BO 30 seconds before it expires
-		this.precastCTA(!me.getState(32) || force || (getTickCount() - this.BOTick >= this.BODuration - 30000));
+		if(Config.Precast.RefreshBO){
+			this.precastCTA(!me.getState(32) || force || (getTickCount() - this.BOTick >= this.BODuration - 30000));
+		} else {
+			this.precastCTA(!me.getState(32));
+		}
 
 		switch (me.classid) {
 		case 0: // Amazon

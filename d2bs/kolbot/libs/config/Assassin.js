@@ -21,6 +21,7 @@ function LoadConfig() {
 		Config.BattleOrders.Mode = 0; // 0 = give BO, 1 = get BO
 		Config.BattleOrders.Wait = false; // Idle until the player that received BO leaves.
 		Config.BattleOrders.Getters = []; // List of players to wait for before casting Battle Orders (mode 0). All players must be in the same area as the BOer.
+	Config.Precast.RefreshBO = true; // Refreshes BO before it expires (based on self-BO). default is true. You might disable if you have Barb doing BO, or other characters with better BO.
 
 	// Team MF system
 	Config.MFLeader = false; // Set to true if you have one or more MFHelpers. Opens TP and gives commands when doing normal MF runs.

@@ -254,6 +254,11 @@ var Config = {
 	// GameData
 	ChampionBias: 60,
 
+	// Precast
+	Precast: {
+		RefreshBO: true
+	},
+
 	// Attack specific
 	Dodge: false,
 	DodgeRange: 15,
